@@ -91,7 +91,7 @@ void UsDelay(uint16_t usDelay)
 	__HAL_TIM_SET_COUNTER(&htim10, 0);
 	while(__HAL_TIM_GET_COUNTER(&htim10) < usDelay);
 	/*
-		>>> Update Frequence = TIM CLK /((PSC+1)*(Counter Period+1)) //Interrupt'a girecegi süre.
+		>>> Update Frequence = TIM CLK /((PSC+1)*(Counter Period+1)) //Interrupt occurs amount of this time
 	  >>> TIM CLK/(PSC+1) = Counter freq
 	*/
 }
